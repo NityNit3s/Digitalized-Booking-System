@@ -1,0 +1,6 @@
+{
+  "name": "Katalog Perangkat dan Formulir",
+  "description": "Katalog Perangkat (Device Catalog) dan Formulir Pengajuan (Request Forms) dengan Rekomendasi Pintar Asisten AI (Gemini) dan Database Backend.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

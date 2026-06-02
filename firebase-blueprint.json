@@ -1,0 +1,53 @@
+{
+  "entities": {
+    "Device": {
+      "title": "Device",
+      "description": "Perangkat pintar dalam katalog inventaris kantor",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "category": { "type": "string", "enum": ["Laptop/PC", "Monitor", "Aksesoris", "Gadget"] },
+        "specification": { "type": "string" },
+        "stock": { "type": "integer" },
+        "image": { "type": "string" },
+        "status": { "type": "string", "enum": ["Tersedia", "Habis"] },
+        "rating": { "type": "number" },
+        "usageDescription": { "type": "string" }
+      },
+      "required": ["id", "name", "category", "specification", "stock", "image", "status", "rating", "usageDescription"]
+    },
+    "RequestForm": {
+      "title": "RequestForm",
+      "description": "Formulir pengajuan perangkat oleh karyawan",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "applicantName": { "type": "string" },
+        "applicantRole": { "type": "string" },
+        "department": { "type": "string" },
+        "email": { "type": "string" },
+        "deviceId": { "type": "string" },
+        "deviceName": { "type": "string" },
+        "deviceImage": { "type": "string" },
+        "reason": { "type": "string" },
+        "expectedDate": { "type": "string" },
+        "usageDuration": { "type": "string" },
+        "status": { "type": "string", "enum": ["Pending", "Disetujui", "Ditolak", "Diproses", "Diserahkan", "Dikembalikan"] },
+        "createdAt": { "type": "string" },
+        "adminNotes": { "type": "string" }
+      },
+      "required": ["id", "applicantName", "applicantRole", "department", "email", "deviceId", "deviceName", "reason", "expectedDate", "usageDuration", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/devices/{deviceId}": {
+      "schema": "Device",
+      "description": "Koleksi katalog perangkat inventaris kantor"
+    },
+    "/requests/{requestId}": {
+      "schema": "RequestForm",
+      "description": "Koleksi pengajuan formulir peminjaman perangkat"
+    }
+  }
+}

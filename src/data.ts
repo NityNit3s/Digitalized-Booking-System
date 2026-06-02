@@ -1,0 +1,118 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { Device } from './types';
+
+export const INITIAL_DEVICES: Device[] = [
+  {
+    id: 'dev-1',
+    name: 'MacBook Pro 16-Inch M3 Max',
+    category: 'Laptop/PC',
+    specification: 'Apple M3 Max Chip (16-core CPU, 40-core GPU), 48GB Unified Memory, 1TB SSD Storage, Liquid Retina XDR Display.',
+    stock: 5,
+    rating: 4.9,
+    image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=600',
+    status: 'Tersedia',
+    usageDescription: 'Sangat direkomendasikan untuk Staff Desain Grafis, Video Editor, Mobile Developer, dan pengerjaan Machine Learning berat.'
+  },
+  {
+    id: 'dev-2',
+    name: 'ThinkPad X1 Carbon Gen 11',
+    category: 'Laptop/PC',
+    specification: 'Intel Core i7-1370P vPro, Intel Iris Xe Graphics, 32GB LPDDR5 RAM, 1TB PCIe Gen4 SSD, 14" WUXGA IPS Touchscreen.',
+    stock: 8,
+    rating: 4.8,
+    image: 'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&q=80&w=600',
+    status: 'Tersedia',
+    usageDescription: 'Pilihan utama untuk Executive, Project Manager, Administrator, dan Software Engineer yang membutuhkan keandalan tinggi dan mobilitas.'
+  },
+  {
+    id: 'dev-3',
+    name: 'Dell UltraSharp 32-Inch 4K LCD Monitor (U3223QE)',
+    category: 'Monitor',
+    specification: '31.5" IPS Black Panel, Resolusi 3845 x 2160 (4K UHD), Rasio Kontras 2000:1, USB-C Hub (90W Power Delivery), 98% DCI-P3.',
+    stock: 4,
+    rating: 4.7,
+    image: 'https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=600',
+    status: 'Tersedia',
+    usageDescription: 'Cocok untuk Pekerja Kreatif, Desainer UI/UX, Data Analyst, dan Web Developer yang membutuhkan presisi warna dan ruang kerja luas.'
+  },
+  {
+    id: 'dev-4',
+    name: 'Logitech MX Master 3S + MX Keys Bundle',
+    category: 'Aksesoris',
+    specification: 'Bundel Keyboard & Mouse Wireless Ergonomis. Sensor Any-surface 8K DPI Magspeed Wheel, Tombol Mechanical Sambil Tying Sunyi.',
+    stock: 12,
+    rating: 4.9,
+    image: 'https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&q=80&w=600',
+    status: 'Tersedia',
+    usageDescription: 'Meningkatkan produktivitas harian untuk semua staff, khususnya Programmer, Administrator, dan Analis Data.'
+  },
+  {
+    id: 'dev-5',
+    name: 'iPad Pro 11-Inch M4 (2024)',
+    category: 'Gadget',
+    specification: 'Apple M4 Chip (9-core CPU, 10-core GPU), 8GB RAM, 256GB Storage, Ultra Retina XDR Tandem OLED, Wi-Fi Only.',
+    stock: 3,
+    rating: 4.8,
+    image: 'https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?auto=format&fit=crop&q=80&w=600',
+    status: 'Tersedia',
+    usageDescription: 'Ideal untuk Project Manager, UX Researcher untuk keperluan testing, Ilustrator, dan Tim Sales untuk presentasi interaktif.'
+  },
+  {
+    id: 'dev-6',
+    name: 'ASUS TUF Gaming A15',
+    category: 'Laptop/PC',
+    specification: 'AMD Ryzen 7 7735HS, NVIDIA GeForce RTX 4060 8GB, 16GB DDR5 RAM, 512GB NVMe SSD, 15.6" FHD 144Hz IPS.',
+    stock: 2,
+    rating: 4.6,
+    image: 'https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&q=80&w=600',
+    status: 'Tersedia',
+    usageDescription: 'Direkomendasikan untuk Tim 3D Modeling, Game Developer, Rendering Engine, atau pengerjaan grafis kasual.'
+  },
+  {
+    id: 'dev-7',
+    name: 'Sony WH-1000XM5 ANC Headphones',
+    category: 'Aksesoris',
+    specification: 'Active Noise Cancelling Wireless Headphones, Masa pakai baterai hingga 30 Jam, Mikrofon Multiple Beamforming, Audio Resolusi Tinggi.',
+    stock: 0,
+    rating: 4.7,
+    image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&q=80&w=600',
+    status: 'Habis',
+    usageDescription: 'Sangat cocok untuk staff yang membutuhkan fokus tinggi di ruang kantor terbuka (open workspace) atau sering melakukan koordinasi online.'
+  },
+  {
+    id: 'dev-8',
+    name: 'Samsung Galaxy Tab S9 Ultra',
+    category: 'Gadget',
+    specification: '14.6" Dynamic AMOLED 2X, Snapdragon 8 Gen 2, RAM 12GB, Storage 256GB, S-Pen include, Tahan Air & Debu IP68.',
+    stock: 2,
+    rating: 4.7,
+    image: 'https://images.unsplash.com/photo-1511385348-a52b4a160dc2?auto=format&fit=crop&q=80&w=600',
+    status: 'Tersedia',
+    usageDescription: 'Pilihan luar biasa untuk presentasi mobile, digital sketching, review kontrak, dan operasional lapangan.'
+  }
+];
+
+export const DEPARTMENTS = [
+  'Engineering / IT',
+  'Design & Creative',
+  'Marketing & Partnership',
+  'Executive & Management',
+  'Human Resources (HR)',
+  'Finance & Accounting',
+  'Sales & Customer Success'
+];
+
+export const WORK_ROLES = [
+  'Software Engineer',
+  'UI/UX Designer',
+  'Digital Marketer',
+  'Project Manager',
+  'Finance Lead',
+  'Machine Learning/Data Scientist',
+  'Graphic Designer',
+  'Customer Support Specialist'
+];

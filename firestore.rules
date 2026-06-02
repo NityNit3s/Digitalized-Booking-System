@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // 1. Global Safety Net
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    // Matcher: Devices Collection
+    match /devices/{deviceId} {
+      allow read, write: if true;
+    }
+
+    // Matcher: Requests Collection
+    match /requests/{requestId} {
+      allow read, write: if true;
+    }
+  }
+}
